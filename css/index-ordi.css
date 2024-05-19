@@ -245,3 +245,33 @@
   justify-content: center;
   flex-direction: column;
 }
+
+#2emePartie{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background-image: url("/img/fondFloral.jpg");
+}
+
+.principaleElement{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: 0.5rem;
+  flex-direction: column;
+
+}
+
+.texteDroit{
+  font-family: DMSerif, sans-serif;
+  margin-bottom: 0.5rem;
+  font-size: 1.4rem ;
+  color: #a48281;
+}
+.texteEligner{
+  font-family: "Great Vibes", sans-serif;
+  margin-bottom: 0.5rem;
+  font-size: 3.5rem ;
+  color: #a48281;
+}

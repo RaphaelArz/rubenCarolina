@@ -97,7 +97,7 @@ body{
   color: #fff;
   background-color: #b59392;
   padding: 10px 20px;
-  border-radius: 5px;
+  border-radius: 2px;
   transition: background-color 0.3s;
   margin-bottom: 15rem;
 }
@@ -238,14 +238,58 @@ body{
 }
 
 .texteDroit{
-  font-family: DMSerif, sans-serif;
   margin-bottom: 0.5rem;
-  font-size: 1.4rem ;
+  font-size: 1.2rem ;
   color: #a48281;
 }
 .texteEligner{
   font-family: "Great Vibes", sans-serif;
-  margin-bottom: 0.5rem;
-  font-size: 3.5rem ;
+  margin-bottom: 1.3rem;
+  font-size: 2rem ;
   color: #a48281;
+}
+
+.texteDroitGras
+{
+  font-family: DMSerif,sans-serif;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem ;
+  color: #a48281;
+}
+
+.titre {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: initial;
+  text-align: center;
+  color: #a48281;
+  margin-bottom: 6rem;
+  margin-top: 6rem;
+
+}
+
+.titre h1 {
+  margin: 0;
+}
+
+.logo {
+  width: 60%;
+  height: auto;
+  max-width: 200px; /* Adjust size as needed */
+  margin-top: 10px;
+}
+
+.btnLink{
+
+  font-family: 'DMSerif', sans-serif;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #fff;
+  background-color: #b59392;
+  padding: 10px 20px;
+  border-radius: 2px;
+  transition: background-color 0.3s;
+  margin-bottom: 3rem;
 }
