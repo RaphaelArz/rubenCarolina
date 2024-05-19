@@ -1,0 +1,247 @@
+/* Définition des polices */
+@font-face {
+  font-family: 'Berlin Sans FB';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/police/BRLNSR.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Brush Script MT';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/police/BRUSHSCI.TTF') format('truetype');
+}
+
+@font-face {
+  font-family: 'Great Vibes';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/police/GreatVibes-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'torah sofer';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/police/TORAH.TTF') format('truetype');
+}
+
+@font-face {
+  font-family: 'DMSerif';
+  font-style: normal;
+  font-weight: bold;
+  src: url('/police/DMSerifDisplay-Regular.ttf') format('truetype');
+}
+
+/* Styles pour l'overlay */
+#overlay {
+  background-image: url("/img/fondFloral.jpg");
+  background-size: cover;
+  background-position: right center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ededed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+#overlay.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+#overlayDiv {
+  width: 90%;
+  max-width: 70%;
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  border-radius: 10px;
+}
+
+#overlayDivImage img {
+  max-width: 25%;
+  height: auto;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+#overlayDivText {
+  font-family: "Great Vibes", sans-serif;
+  font-size: 4rem;
+  color: #b59392;
+  margin-bottom: 20px;
+}
+
+#overlayDivButton .btnLink {
+  font-family: 'DMSerif', sans-serif;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #fff;
+  background-color: #b59392;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  margin-bottom: 15rem;
+}
+
+#overlayDivButton .btnLink:hover {
+  background-color: #a48281;
+}
+
+/* Styles pour les éléments du compte à rebours */
+.countDownElement {
+  font-family: 'Great Vibes', sans-serif;
+  font-size: 4rem;
+  color: #a48281;
+  margin-bottom: 0rem;
+}
+
+.countDownSquare {
+  font-family: 'Great Vibes', sans-serif;
+  font-size: 1.2rem;
+  color: #333;
+  padding: 10px;
+  border: 2px solid #b59392;
+  border-radius: 5px;
+  width: 12vw; /* Largeur fixe pour une taille uniforme */
+  height: 8vw; /* Hauteur fixe pour une taille uniforme */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box; /* Assure que le padding et la bordure sont inclus dans la largeur et la hauteur */
+  flex-direction: column;
+  margin-right: 10px; /* Ajoute un petit espace entre les éléments */
+}
+
+#overlayDivCountdown {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+
+
+#navbar {
+  background-color: #000000;
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  height: 80px; /* Ajustez la hauteur selon vos besoins */
+  display: none; /* Masquer la barre de navigation par défaut */
+}
+
+#navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  height: 100%; /* Assure que la liste occupe toute la hauteur de la barre de navigation */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#navbar ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+#navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+  padding: 10px;
+}
+
+
+#principale {
+  display: flex;
+  flex-direction: column; /* Pour empiler les éléments verticalement */
+}
+
+#principalePhoto img {
+  width: 100%; /* Pour que l'image prenne toute la largeur de son conteneur */
+  height: auto; /* Pour conserver le ratio hauteur/largeur original de l'image */
+}
+
+#photoDecomptes {
+
+  display: flex;
+  justify-content: center; /* Pour centrer les éléments horizontalement */
+  align-items: center; /* Pour centrer les éléments verticalement */
+  background-image:linear-gradient( rgba(0, 0, 0, 0.58), rgba(119, 119, 119, 0.2)), url("/img/rubenCarolina.jpg");
+  background-position: left center; /* Centrer l'image de fond */
+  background-size: cover;
+  padding: 20px; /* Ajout de marge autour du compte à rebours */
+}
+
+#photoDecomptes{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+  flex-direction: row;
+}
+
+.countDownSquare2 {
+  font-family: 'Great Vibes', sans-serif;
+  font-size: 1.2em;
+  color: #ffffff;
+  padding: 10px;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  width: 70px; /* Largeur fixe pour une taille uniforme */
+  height: 70px; /* Hauteur fixe pour une taille uniforme */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box; /* Assure que le padding et la bordure sont inclus dans la largeur et la hauteur */
+  flex-direction: column;
+  margin-right: 8px; /* Ajoute un petit espace entre les éléments */
+}
+
+#principaleDecompte{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+#photoDecomptesDivImage img{
+  max-width: 80%;
+  height: auto;
+  display: block;
+  margin: 0 auto 20px;
+
+}
+
+#photoDecomptesText{
+  align-items: center;
+  display: flex;
+  font-family: "Great Vibes", sans-serif;
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 20px;
+
+}
+
+#photoDecomptesElement{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html class="no-js" lang="he">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <meta name="description" content="">
+
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta property="og:image:alt" content="">
+
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="icon.png">
+
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="theme-color" content="#fafafa">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" type="text/css" media="screen and (max-width: 768px)" href="css/index-mobile.css">
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 480px)" href="css/index-ordi.css">
+
+
+</head>
+
+
+<body>
+
+<div id="overlay">
+    <div id="overlayDiv">
+        <div id="overlayDivImage">
+            <img src="/img/logoRubenCarolinaV2.png" >
+        </div>
+        <div id="overlayDivText">Ruben & Carolina</div>
+
+        <div id="overlayDivCountdown">
+            <div id="countdownJour" class="countDownSquare">
+                <a id="overlayDivCountdownJour" class="countDownElement"> </a>
+                <a class="countDownElementText">Jours</a>
+            </div>
+            <div id="countdownHeure" class="countDownSquare">
+                <a id="overlayDivCountdownHeure" class="countDownElement"> </a>
+                <a class="countDownElementText">Heures</a>
+            </div>
+            <div id="countdownMinute" class="countDownSquare">
+                <a id="overlayDivCountdownMinutes" class="countDownElement"> </a>
+                <a class="countDownElementText">Minutes</a>
+            </div>
+            <div id="countdownSeconde" class="countDownSquare">
+                <a id="overlayDivCountdownSecondes" class="countDownElement"> </a>
+                <a class="countDownElementText">Secondes</a>
+            </div>
+        </div>
+
+
+        <div id="overlayDivButton">
+            <a class="btnLink" onclick="hideOverlay(); playMusic()" style="font-family: DMSerif, sans-serif"><b>→</b>
+                Voir l'invitation</a>
+        </div>
+
+
+    </div>
+
+
+</div>
+
+<div id="principale">
+
+    <div id="photoDecomptes">
+
+        <div id="photoDecomptesElement">
+            <div id="photoDecomptesDivImage">
+                <img src="/img/fleurblanche.png"  alt="logo">
+            </div>
+
+            <div id="photoDecomptesText">Ruben & Carolina</div>
+
+            <div id="principaleDecompte">
+
+                <div id="countdownJour2" class="countDownSquare2">
+                    <a id="overlayDivCountdownJour2" class="countDownElement2"> </a>
+                    <a class="countDownElementText2">Jours</a>
+                </div>
+                <div id="countdownHeure2" class="countDownSquare2">
+                    <a id="overlayDivCountdownHeure2" class="countDownElement2"> </a>
+                    <a class="countDownElementText2">Heures</a>
+                </div>
+                <div id="countdownMinute2" class="countDownSquare2">
+                    <a id="overlayDivCountdownMinutes2" class="countDownElement2"> </a>
+                    <a class="countDownElementText2">Minutes</a>
+                </div>
+                <div id="countdownSeconde2" class="countDownSquare2">
+                    <a id="overlayDivCountdownSecondes2" class="countDownElement2"> </a>
+                    <a class="countDownElementText2">Secondes</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="2emePartie">
+
+        <div id="2emepartieText" class="principaleElement">
+            <h1>Mairie</h1>
+            <a class="texteEligner">Ruben et Carolina</a>
+
+            <a class="texteDroit">se diront</a>
+
+            <a class="texteEligner">"Oui"</a>
+            <br>
+            <a class="texteDroit">le jeudi 23 mars 2025</a>
+            <br>
+            <a class="texteDroit">à la Mairie du 16ème arrondissement</a>
+            <a class="texteDroit"> 71 Av. Henri Martin, 75016 Paris</a>
+            <br>
+            <br>
+            <a class="texteDroit" style="font-size: 1rem">La cérémonie sera suivie d’un vin d’honneur</a>
+
+            <br>
+            <div id="overlayDivButton">
+                <a class="btnLink"<b>→</b>
+                    Voir itinéraire</a>
+            </div>
+            <br>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<audio id="myAudio" src="/musique/.mp3"></audio>
+<script>
+    function playMusic() {
+        var audio = document.getElementById("myAudio");
+        audio.play();
+    }
+</script>
+
+
+<script defer src="/js/coche.js"></script>
+
+<script defer src="/js/countDown.js"></script>
+<script defer src="/js/script.js"></script>
+<!--<script defer src="/js/mailer.js"></script>-->
+<script defer src="/js/transition.js"></script>
+
+<!-- Script jQuery pour envoyer le formulaire via AJAX -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script defer src="/js/jsToPhpMail.js"></script>
+
+
+</body>
+
+</html>
