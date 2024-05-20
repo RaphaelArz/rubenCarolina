@@ -145,8 +145,9 @@ body{
 #principale {
   display: flex;
   flex-direction: column; /* Pour empiler les éléments verticalement */
-  background-image: url("/img/fondFloral.jpg");
-  background-size: cover;
+  background-image: url("/img/fondFloralPaterne.jpg");
+  background-size: contain;
+
 
 }
 
