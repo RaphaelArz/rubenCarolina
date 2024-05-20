@@ -171,7 +171,6 @@ body{
   align-items: center;
   display: flex;
   justify-content: center;
-  margin-bottom: 3rem;
   flex-direction: row;
 }
 
@@ -501,6 +500,15 @@ input[type="submit"] {
   font-family: DMSerif, sans-serif; /* Utilisation de la police Berlin Sans FB */
   font-size: 1.3rem;
 }
+
+.texteElignerNom{
+  font-size: 13vw;
+  font-family: "Great Vibes", sans-serif;
+  margin-bottom: 1.3rem;
+  color: #a48281;
+  text-align: center;
+}
+
 
 
 

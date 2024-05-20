@@ -171,7 +171,9 @@
 #principale {
   display: flex;
   flex-direction: column; /* Pour empiler les éléments verticalement */
-
+  background-image: url("/img/fondFloralPaterne.jpg");
+  background-size: cover;
+  padding: 0rem 16rem 0rem 16rem;
 }
 
 #principalePhoto img {
@@ -194,19 +196,18 @@
   align-items: center;
   display: flex;
   justify-content: center;
-  margin-bottom: 3rem;
   flex-direction: row;
 }
 
 .countDownSquare2 {
   font-family: 'Great Vibes', sans-serif;
-  font-size: 1.2em;
+  font-size: 2.8em;
   color: #ffffff;
   padding: 10px;
   border: 2px solid #ffffff;
   border-radius: 5px;
-  width: 70px; /* Largeur fixe pour une taille uniforme */
-  height: 70px; /* Hauteur fixe pour une taille uniforme */
+  width: 140px; /* Largeur fixe pour une taille uniforme */
+  height: 140px; /* Hauteur fixe pour une taille uniforme */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -234,7 +235,7 @@
   align-items: center;
   display: flex;
   font-family: "Great Vibes", sans-serif;
-  font-size: 2.5rem;
+  font-size: 5rem;
   color: #ffffff;
   margin-bottom: 20px;
 
@@ -261,6 +262,7 @@
   background-color: rgba(255, 255, 255, 0.5);
   margin: 0.5rem;
   flex-direction: column;
+  text-align: center;
 
 }
 
@@ -457,29 +459,67 @@ footer {
   padding: 20px; /* Espacement intérieur pour un meilleur aspect */
 }
 
-.round {
-  background-color: #c7c7c7; /* Couleur de fond pour le cercle */
-  color: #fffaf4; /* Couleur du texte à l'intérieur du cercle */
-  border-radius: 50%; /* Pour rendre le cercle arrondi */
-  width: 6vw; /* Taille du cercle */
-  height: 6vw; /* Taille du cercle */
-  line-height: 50px; /* Pour centrer le texte verticalement */
-  font-size: 4vw; /* Taille du texte */
-  display: inline-block; /* Pour que le cercle s'affiche correctement */
-  margin-bottom: 10px; /* Espacement entre le cercle et le texte */
-  align-items: center;
-  justify-content: center;
+
+
+span {
+  color: #333; /* Couleur du texte */
+  font-size: 1.5vw; /* Taille du texte */
+  display: block; /* Pour que le texte apparaisse sur une ligne séparée */
+  margin-bottom: 10px; /* Espacement entre le texte et l'icône Instagram */
+}
+
+.instagram-logo {
+  height: 1.5vw; /* Taille de l'icône Instagram */
+  width: auto; /* Ajustement automatique de la largeur */
 }
 
 
-.instagram-logo {
-  height: 3vw; /* Taille de l'icône Instagram */
-  width: auto; /* Ajustement automatique de la largeur */
+
+
+.form-group {
+  margin-bottom: 10px;
+
+
 }
 
 label{
   display: flex;
   align-items: center;
   flex-direction: row;
+  margin-bottom: 5px;
+}
+
+
+input[type="checkbox"] {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+input[type="text"],
+input[type="number"],
+textarea,
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; /* Pour inclure la bordure dans la largeur et la hauteur */
+  font-family: DMSerif, sans-serif; /* Utilisation de la police Berlin Sans FB */
+  font-size: 1.3rem;
+}
+
+label{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.texteElignerNom{
+  font-size: 7.5vw;
+  font-family: "Great Vibes", sans-serif;
+  margin-bottom: 1.3rem;
+  color: #a48281;
+  text-align: center;
 }
 
