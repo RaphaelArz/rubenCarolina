@@ -75,7 +75,6 @@
 <div id="principale">
 
 
-
     <div id="photoDecomptes">
 
         <div id="photoDecomptesElement">
@@ -160,7 +159,7 @@
                 </div>
                 <div id="kolSason">
 
-                    <img src="/img/kolSason.png" >
+                    <img src="/img/kolSason.png">
 
                 </div>
 
@@ -183,7 +182,8 @@
 
                 <br>
                 <br>
-                <a class="texteDroit" style="text-align: center">Ont la joie de vous faire part du mariage de leurs petits-enfants et enfants</a>
+                <a class="texteDroit" style="text-align: center">Ont la joie de vous faire part du mariage de leurs
+                    petits-enfants et enfants</a>
                 <br>
                 <div class="parent">
                     <div class="parentGauche">
@@ -221,84 +221,91 @@
         </div>
 
         <div class="principaleElement">
-        <div id="reponse" >
+            <div id="reponse">
 
-            <div class="titre">
-                <h1>RÉPONSE</h1>
+                <div class="titre">
+                    <h1>RÉPONSE</h1>
 
-            </div>            <a class="txtSecondePartie">Merci de confirmer votre présence</a>
-            <br>
-            <form id="formReponse">
-                <div class="form-group">
-                    <label for="nom">
-                        Nom:
-                        <input type="text" id="nom" name="nom" required>
-                    </label>
                 </div>
-                <div class="form-group">
-                    <label for="prenom">
-                        Prénom:
-                        <input type="text" id="prenom" name="prenom" required>
-                    </label>
-                </div>
-                <div class="form-group">
-                    <label>
-                        <input type="checkbox" id="ne-pourront-assister" name="ne-pourront-assister">
-                        Ne pourront pas assister
-                    </label>
-                </div>
-                <div class="form-group">
-                    <label>
-                        <input type="checkbox" id="reception" name="reception">
-                        Assisteront à la réception
-                    </label>
-                </div>
-                <div class="form-group">
-                    <label>
-                        <input type="checkbox" id="tephiline" name="tephiline">
-                        Assisteront à la mise des téphiline
-                    </label>
-                </div>
-                <div class="form-group">
-                    <label for="nombre">Nombre de personnes</label>
-                    <input type="number" id="nombre" name="nombre" min="0" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message au bar-mitzvah</label>
-                    <textarea id="message" placeholder="Mazal tov!!" class="textarea" name="message"></textarea>
-                </div>
-                <div class="form-group">
-                    <input class="btnLinkform" type="submit" value="Envoyer">
-                </div>
-            </form>
+                <a class="txtSecondePartie">Merci de confirmer votre présence</a>
+                <br>
+                <form id="formReponse">
+                    <div class="form-group">
+                        <label for="nom">
+                            Nom:
+                            <input type="text" id="nom" name="nom" required>
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label for="prenom">
+                            Prénom:
+                            <input type="text" id="prenom" name="prenom" required>
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" id="ne-pourront-assister" name="ne-pourront-assister">
+                            <a> Ne pourront pas assister</a>
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" id="reception" name="reception">
+                            <a> Assisteront à la réception</a>
+                        </label>
+                    </div>
+                    <div class="form-group" >
+                        <label>
+                            <input type="checkbox" id="tephiline" name="tephiline">
+                            <a> Assisteront à la mairie</a>
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label for="nombre">Nombre de personnes</label>
+                        <input type="number" id="nombre" name="nombre" min="0" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message aux mariés</label>
+                        <textarea id="message" placeholder="Mazal tov!!" class="textarea" name="message"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <input class="btnLink" type="submit" value="Envoyer">
+                    </div>
+                </form>
+            </div>
+
         </div>
-
-        </div>
-
 
 
     </div>
+</div>
+<footer>
+    <span>Raphael Arzoin</span>
+    <a href="https://www.instagram.com/rphl_arzoin/">
+        <img src="/img/logo-instagram.png" alt="Instagram" class="instagram-logo">
+    </a>
+</footer>
 
 
-    <audio id="myAudio" src="/musique/vehisheamda.mp3"></audio>
-    <script>
-        function playMusic() {
-            var audio = document.getElementById("myAudio");
-            audio.play();
-        }
-    </script>
+<audio id="myAudio" src="/musique/vehisheamda.mp3"></audio>
+<script>
+    function playMusic() {
+        var audio = document.getElementById("myAudio");
+        audio.play();
+    }
+</script>
 
 
-    <script defer src="/js/coche.js"></script>
+<script defer src="/js/coche.js"></script>
 
-    <script defer src="/js/countDown.js"></script>
-    <script defer src="/js/script.js"></script>
-    <!--<script defer src="/js/mailer.js"></script>-->
-    <script defer src="/js/transition.js"></script>
+<script defer src="/js/countDown.js"></script>
+<script defer src="/js/script.js"></script>
+<!--<script defer src="/js/mailer.js"></script>-->
+<script defer src="/js/transition.js"></script>
 
-    <!-- Script jQuery pour envoyer le formulaire via AJAX -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script defer src="/js/jsToPhpMail.js"></script>
+<!-- Script jQuery pour envoyer le formulaire via AJAX -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script defer src="/js/jsToPhpMail.js"></script>
 
 
 </body>

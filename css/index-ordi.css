@@ -450,3 +450,36 @@
 #kolSason img{
   width: 97%;
 }
+
+footer {
+  text-align: center;
+  background-color: #fffaf4; /* Couleur de fond douce */
+  padding: 20px; /* Espacement intérieur pour un meilleur aspect */
+}
+
+.round {
+  background-color: #c7c7c7; /* Couleur de fond pour le cercle */
+  color: #fffaf4; /* Couleur du texte à l'intérieur du cercle */
+  border-radius: 50%; /* Pour rendre le cercle arrondi */
+  width: 6vw; /* Taille du cercle */
+  height: 6vw; /* Taille du cercle */
+  line-height: 50px; /* Pour centrer le texte verticalement */
+  font-size: 4vw; /* Taille du texte */
+  display: inline-block; /* Pour que le cercle s'affiche correctement */
+  margin-bottom: 10px; /* Espacement entre le cercle et le texte */
+  align-items: center;
+  justify-content: center;
+}
+
+
+.instagram-logo {
+  height: 3vw; /* Taille de l'icône Instagram */
+  width: auto; /* Ajustement automatique de la largeur */
+}
+
+label{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+

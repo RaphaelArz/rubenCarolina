@@ -246,6 +246,8 @@ body{
   font-size: 1.2rem ;
   color: #a48281;
   text-align: center;
+  font-family: "Times New Roman",sans-serif;
+
 
 
 }
@@ -367,8 +369,9 @@ margin-top: 1rem;
 
 .form-group label {
   font-family: 'DMSerif', sans-serif;
-  font-size: 1rem;
-  color: #333;
+
+  font-size: 1.2rem;
+  color: #b49291;
   display: flex;
   flex-direction: column;
 }
@@ -440,3 +443,63 @@ margin-top: 1rem;
 #kolSason img{
   width: 96%;
 }
+
+
+footer {
+  text-align: center;
+  background-color: #fffaf4; /* Couleur de fond douce */
+  padding: 20px; /* Espacement intérieur pour un meilleur aspect */
+}
+
+
+
+span {
+  color: #333; /* Couleur du texte */
+  font-size: 4vw; /* Taille du texte */
+  display: block; /* Pour que le texte apparaisse sur une ligne séparée */
+  margin-bottom: 10px; /* Espacement entre le texte et l'icône Instagram */
+}
+
+.instagram-logo {
+  height: 3vw; /* Taille de l'icône Instagram */
+  width: auto; /* Ajustement automatique de la largeur */
+}
+
+
+
+
+.form-group {
+  margin-bottom: 10px;
+
+
+}
+
+label{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 5px;
+}
+
+
+input[type="checkbox"] {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+input[type="text"],
+input[type="number"],
+textarea,
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; /* Pour inclure la bordure dans la largeur et la hauteur */
+  font-family: DMSerif, sans-serif; /* Utilisation de la police Berlin Sans FB */
+  font-size: 1.3rem;
+}
+
+
+
