@@ -57,6 +57,8 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1000; /* High z-index to be on top of everything */
+
   opacity: 1;
   transition: opacity 0.5s;
 }
@@ -145,6 +147,7 @@ body{
   flex-direction: column; /* Pour empiler les éléments verticalement */
   background-image: url("/img/fondFloral.jpg");
   background-size: cover;
+
 }
 
 #principalePhoto img {
@@ -235,18 +238,23 @@ body{
   margin: 0.5rem;
   flex-direction: column;
 
+
 }
 
 .texteDroit{
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.8rem;
   font-size: 1.2rem ;
   color: #a48281;
+  text-align: center;
+
 }
 .texteEligner{
   font-family: "Great Vibes", sans-serif;
   margin-bottom: 1.3rem;
   font-size: 2rem ;
   color: #a48281;
+  text-align: center;
+
 }
 
 .texteDroitGras
@@ -255,6 +263,8 @@ body{
   margin-bottom: 0.5rem;
   font-size: 1.2rem ;
   color: #a48281;
+  text-align: center;
+
 }
 
 .titre {
@@ -262,10 +272,10 @@ body{
   align-items: center;
   justify-content: center;
   display: flex;
-  flex-direction: initial;
+  flex-direction: column;
   text-align: center;
   color: #a48281;
-  margin-bottom: 6rem;
+  margin-bottom: 1.5rem;
   margin-top: 6rem;
 
 }
@@ -292,4 +302,124 @@ body{
   border-radius: 2px;
   transition: background-color 0.3s;
   margin-bottom: 3rem;
+}
+.titre img {
+margin-top: 1rem;
+  width: 40%;
+  height: auto;
+}
+
+#3emePartie{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background-image: url("/img/fondFloral.jpg");
+
+}
+
+.parent{
+  width: 90%;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+}
+.parentGauche{
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+
+
+}
+.parentDroit{
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+
+
+
+.txtImportant {
+  font-family: 'Great Vibes', sans-serif;
+  font-size: 3rem;
+  color: #a48281;
+  margin-bottom: 1rem;
+}
+
+.txtSecondePartie {
+  font-family: 'DMSerif', sans-serif;
+  font-size: 1.2rem;
+  color: #a48281;
+  margin-bottom: 2rem;
+}
+
+
+.form-group {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  font-family: 'DMSerif', sans-serif;
+  font-size: 1rem;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group textarea {
+  font-family: 'DMSerif', sans-serif;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #b59392;
+  border-radius: 5px;
+  margin-top: 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form-group input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+.form-group textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+.btnLink {
+  font-family: 'DMSerif', sans-serif;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #fff;
+  background-color: #b59392;
+  padding: 10px 20px;
+  border-radius: 2px;
+  transition: background-color 0.3s;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+
+.btnLink:hover {
+  background-color: #a48281;
+}
+
+
+.btnLinkform{
+  font-family: 'DMSerif', sans-serif;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #fff;
+  background-color: #b59392;
+  padding: 10px 20px;
+  border-radius: 2px;
+  transition: background-color 0.3s;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }

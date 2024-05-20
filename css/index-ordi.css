@@ -171,6 +171,7 @@
 #principale {
   display: flex;
   flex-direction: column; /* Pour empiler les éléments verticalement */
+
 }
 
 #principalePhoto img {
@@ -275,3 +276,167 @@
   font-size: 3.5rem ;
   color: #a48281;
 }
+
+
+.texteDroitGras
+{
+  font-family: DMSerif,sans-serif;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem ;
+  color: #a48281;
+  text-align: center;
+
+}
+
+.titre {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #a48281;
+  margin-bottom: 1.5rem;
+  margin-top: 6rem;
+
+}
+
+.titre h1 {
+  margin: 0;
+}
+
+.logo {
+  width: 60%;
+  height: auto;
+  max-width: 200px; /* Adjust size as needed */
+  margin-top: 10px;
+}
+
+.btnLink{
+
+  font-family: 'DMSerif', sans-serif;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #fff;
+  background-color: #b59392;
+  padding: 10px 20px;
+  border-radius: 2px;
+  transition: background-color 0.3s;
+  margin-bottom: 3rem;
+}
+.titre img {
+  margin-top: 1rem;
+  width: 40%;
+  height: auto;
+}
+
+#3emePartie{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background-image: url("/img/fondFloral.jpg");
+
+}
+
+.parent{
+  width: 90%;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+}
+.parentGauche{
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+
+}
+.parentDroit{
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+.txtImportant {
+  font-family: 'Great Vibes', sans-serif;
+  font-size: 3rem;
+  color: #a48281;
+  margin-bottom: 1rem;
+}
+
+.txtSecondePartie {
+  font-family: 'DMSerif', sans-serif;
+  font-size: 1.2rem;
+  color: #a48281;
+  margin-bottom: 2rem;
+}
+
+
+.form-group {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  font-family: 'DMSerif', sans-serif;
+  font-size: 1rem;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group textarea {
+  font-family: 'DMSerif', sans-serif;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #b59392;
+  border-radius: 5px;
+  margin-top: 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form-group input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+.form-group textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+.btnLink {
+  font-family: 'DMSerif', sans-serif;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #fff;
+  background-color: #b59392;
+  padding: 10px 20px;
+  border-radius: 2px;
+  transition: background-color 0.3s;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+
+.btnLink:hover {
+  background-color: #a48281;
+}
+
+
+.btnLinkform{
+  font-family: 'DMSerif', sans-serif;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #fff;
+  background-color: #b59392;
+  padding: 10px 20px;
+  border-radius: 2px;
+  transition: background-color 0.3s;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+

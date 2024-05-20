@@ -37,7 +37,7 @@
 <div id="overlay">
     <div id="overlayDiv">
         <div id="overlayDivImage">
-            <img src="/img/logoRubenCarolinaV2.png" >
+            <img src="/img/logoRubenCarolinaV2.png">
         </div>
         <div id="overlayDivText">Ruben & Carolina</div>
 
@@ -74,11 +74,13 @@
 
 <div id="principale">
 
+
+
     <div id="photoDecomptes">
 
         <div id="photoDecomptesElement">
             <div id="photoDecomptesDivImage">
-                <img src="/img/fleurblanche.png"  alt="logo">
+                <img src="/img/fleurblanche.png" alt="logo">
             </div>
 
             <div id="photoDecomptesText">Ruben & Carolina</div>
@@ -109,11 +111,11 @@
     <div id="2emePartie">
 
 
-
         <div id="2emepartieText" class="principaleElement">
 
             <div class="titre">
                 <h1>MAIRIE</h1>
+                <img src="/img/alliance.png">
             </div>
 
             <a class="texteEligner">Ruben & Carolina</a>
@@ -128,7 +130,8 @@
 
             <br>
             <a class="texteDroit">à la Mairie du 16ème arrondissement</a>
-            <a class="texteDroit"> 71 Av. Henri Martin, 75016 Paris</a>
+            <a class="texteDroit"> 71 Av. Henri Martin,</a>
+            <a class="texteDroit"> 75016 Paris</a></a>
             <br>
             <br>
             <a class="texteDroit" style="font-size: 1rem">La cérémonie sera suivie d’un vin d’honneur</a>
@@ -143,30 +146,150 @@
 
         </div>
 
+
+        <div id="3emePartie">
+
+
+            <div id="3emepartieText" class="principaleElement">
+
+                <div class="titre">
+                    <h1>HOUPPA & SOIRÉE</h1>
+                    <img src="/img/colombe.png">
+                </div>
+
+                <div class="parent">
+                    <div id="parentGauche">
+                        <a class="texteDroit" style="font-size: 1rem">Mr et Mme Seban</a>
+                        <a class="texteDroit" style="font-size: 1rem">Mr et Mme Arnaud et Karine Chabenes </a>
+
+                    </div>
+
+                    <div id="parentDroit">
+                        <a class="texteDroit" style="font-size: 1rem">Mr et Mme Carolina</a>
+                        <a class="texteDroit" style="font-size: 1rem">Mr et Mme Neymar et Daniela Carolina </a>
+
+                    </div>
+
+                </div>
+
+                <br>
+                <br>
+                <a class="texteDroit">Ont la joie de vous faire part du mariage de leurs petits-enfants et enfants</a>
+                <br>
+                <div class="parent">
+                    <div class="parentGauche">
+                        <a class="texteEligner" style="font-size:15vw">Ruben</a>
+                        <a class="texteDroit" style="font-size: 1rem"> </a>
+
+                    </div>
+                    <div><a class="texteEligner">&</a></div>
+
+                    <div class="parentDroit">
+                        <a class="texteEligner" style="font-size: 15vw">Carolina</a>
+                        <a class="texteDroit" style="font-size: 1rem"></a>
+
+                    </div>
+                </div>
+
+                <a class="texteDroit">et seront honorés de votre présence
+                    à la cérémonie religieuse qui sera célébrée</a>
+                <a class="texteDroitGras">le dimanche 26 mars 2025</a>
+                <a class="texteDroitGras">à 18h00 précises</a>
+
+
+                <br>
+                <a class="texteDroitGras">À InterContinental Paris – Le Grand 2 Rue Scribe, 75009 Paris</a>
+                <a class="texteDroit"> La cérémonie sera suivie d’une réception</a>
+                <br>
+                <br>
+                <div class="btnLink">
+                    <a class="btnLink"><b>→</b>Voir itinéraire</a>
+                </div>
+                <br>
+
+            </div>
+
+        </div>
+
+        <div class="principaleElement">
+        <div id="reponse" >
+
+            <div class="titre">
+                <h1>RÉPONSE</h1>
+
+            </div>            <a class="txtSecondePartie">Merci de confirmer votre présence</a>
+            <br>
+            <form id="formReponse">
+                <div class="form-group">
+                    <label for="nom">
+                        Nom:
+                        <input type="text" id="nom" name="nom" required>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label for="prenom">
+                        Prénom:
+                        <input type="text" id="prenom" name="prenom" required>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="ne-pourront-assister" name="ne-pourront-assister">
+                        Ne pourront pas assister
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="reception" name="reception">
+                        Assisteront à la réception
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="tephiline" name="tephiline">
+                        Assisteront à la mise des téphiline
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label for="nombre">Nombre de personnes</label>
+                    <input type="number" id="nombre" name="nombre" min="0" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message au bar-mitzvah</label>
+                    <textarea id="message" placeholder="Mazal tov!!" class="textarea" name="message"></textarea>
+                </div>
+                <div class="form-group">
+                    <input class="btnLinkform" type="submit" value="Envoyer">
+                </div>
+            </form>
+        </div>
+
+        </div>
+
+
+
     </div>
 
-</div>
+
+    <audio id="myAudio" src="/musique/vehisheamda.mp3"></audio>
+    <script>
+        function playMusic() {
+            var audio = document.getElementById("myAudio");
+            audio.play();
+        }
+    </script>
 
 
-<audio id="myAudio" src="/musique/.mp3"></audio>
-<script>
-    function playMusic() {
-        var audio = document.getElementById("myAudio");
-        audio.play();
-    }
-</script>
+    <script defer src="/js/coche.js"></script>
 
+    <script defer src="/js/countDown.js"></script>
+    <script defer src="/js/script.js"></script>
+    <!--<script defer src="/js/mailer.js"></script>-->
+    <script defer src="/js/transition.js"></script>
 
-<script defer src="/js/coche.js"></script>
-
-<script defer src="/js/countDown.js"></script>
-<script defer src="/js/script.js"></script>
-<!--<script defer src="/js/mailer.js"></script>-->
-<script defer src="/js/transition.js"></script>
-
-<!-- Script jQuery pour envoyer le formulaire via AJAX -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script defer src="/js/jsToPhpMail.js"></script>
+    <!-- Script jQuery pour envoyer le formulaire via AJAX -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="/js/jsToPhpMail.js"></script>
 
 
 </body>
