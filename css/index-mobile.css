@@ -247,6 +247,7 @@ body{
   color: #a48281;
   text-align: center;
 
+
 }
 .texteEligner{
   font-family: "Great Vibes", sans-serif;
@@ -254,6 +255,7 @@ body{
   font-size: 2rem ;
   color: #a48281;
   text-align: center;
+
 
 }
 
@@ -264,6 +266,7 @@ body{
   font-size: 1.2rem ;
   color: #a48281;
   text-align: center;
+
 
 }
 
@@ -322,6 +325,7 @@ margin-top: 1rem;
   justify-content: center;
   display: flex;
   flex-direction: row;
+  text-align: center;
 }
 .parentGauche{
   width: 48%;
@@ -335,6 +339,7 @@ margin-top: 1rem;
   display: flex;
   flex-direction: column;
   text-align: right;
+
 }
 
 
@@ -422,4 +427,16 @@ margin-top: 1rem;
   align-items: center;
   justify-content: center;
   width: 100%;
+}
+
+#kolSason{
+
+  align-items: center;
+  justify-content: center;
+  display: flex;
+
+}
+
+#kolSason img{
+  width: 96%;
 }

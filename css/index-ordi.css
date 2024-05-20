@@ -439,4 +439,14 @@
   justify-content: center;
   width: 100%;
 }
+#kolSason{
 
+  align-items: center;
+  justify-content: center;
+  display: flex;
+
+}
+
+#kolSason img{
+  width: 96%;
+}
