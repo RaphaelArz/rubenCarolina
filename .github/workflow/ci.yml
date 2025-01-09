@@ -1,42 +1,41 @@
-name: CI/CD Pipeline
+name: Detect Push on Main
 
+# Déclencheur pour les événements "push" sur la branche "main"
 on:
   push:
     branches:
-      - main # La pipeline s'exécute uniquement sur la branche "main"
+      - main
 
 jobs:
-  deploy:
-    name: Deploy to Server
+  build:
     runs-on: ubuntu-latest
 
     steps:
-      # Étape 1 : Vérifier le dépôt
-      - name: Checkout Code
+      # Étape 1 : Vérification du code source
+      - name: Checkout code
         uses: actions/checkout@v3
 
-      # Étape 2 : Configurer SSH
-      - name: Setup SSH
-        run: |
-          mkdir -p ~/.ssh
-          echo "${{ secrets.SSH_PRIVATE_KEY }}" | base64 -d > ~/.ssh/id_rsa
-          chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan -H ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
+      # Étape 2 : Afficher un message
+      - name: Print a message
+        run: echo "A push has been detected on the main branch!"
 
-      # Étape 3 : Se connecter au serveur et déployer
-      - name: Deploy Application
+      # Étape 3 : Mettre à jour le code sur le serveur distant
+      - name: Git Pull and Build
         env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
           SSH_USER: ${{ secrets.SSH_USER }}
           SSH_HOST: ${{ secrets.SSH_HOST }}
           WORK_DIR: ${{ secrets.WORK_DIR }}
         run: |
+          echo "Connecting to the server..."
+          mkdir -p ~/.ssh
+          echo "$SSH_PRIVATE_KEY" | base64 -d > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan -H $SSH_HOST >> ~/.ssh/known_hosts
           ssh $SSH_USER@$SSH_HOST "
             cd $WORK_DIR &&
             git pull origin main &&
-            docker-compose down &&
-            docker-compose up --build -d
+            echo 'Building the application...' &&
+            npm install &&
+            npm run build
           "
-
-      # Étape 4 : Nettoyer les fichiers SSH
-      - name: Cleanup SSH
-        run: rm -rf ~/.ssh
