@@ -1,4 +1,4 @@
-name: Detect Push on Main
+name: Deploy to AWS
 
 on:
   push:
@@ -6,29 +6,30 @@ on:
       - main
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Test SSH Connection and Build
+      - name: Set up SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "$SSH_PRIVATE_KEY" | base64 -d > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan -H $SSH_HOST >> ~/.ssh/known_hosts
+
+      - name: Deploy application
+        run: |
+          ssh $SSH_USER@$SSH_HOST "
+            cd $WORK_DIR &&
+            git pull origin main &&
+            docker-compose down &&
+            docker-compose up --build -d
+          "
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
           SSH_USER: ${{ secrets.SSH_USER }}
           SSH_HOST: ${{ secrets.SSH_HOST }}
           WORK_DIR: ${{ secrets.WORK_DIR }}
-        run: |
-          echo "Connecting to the server..."
-          mkdir -p ~/.ssh
-          echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
-          chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan -H $SSH_HOST >> ~/.ssh/known_hosts
-          ssh -i ~/.ssh/id_rsa $SSH_USER@$SSH_HOST "
-            cd $WORK_DIR &&
-            git pull origin main &&
-            echo 'Building the application...' &&
-            npm install &&
-            npm run build
-          "
