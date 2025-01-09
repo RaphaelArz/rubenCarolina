@@ -19,23 +19,23 @@ jobs:
       - name: Print a message
         run: echo "A push has been detected on the main branch!"
 
-      # Étape 3 : Mettre à jour le code sur le serveur distant
-      - name: Git Pull and Build
-        env:
-          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-          SSH_USER: ${{ secrets.SSH_USER }}
-          SSH_HOST: ${{ secrets.SSH_HOST }}
-          WORK_DIR: ${{ secrets.WORK_DIR }}
-        run: |
-          echo "Connecting to the server..."
-          mkdir -p ~/.ssh
-          echo "$SSH_PRIVATE_KEY" | base64 -d > ~/.ssh/id_rsa
-          chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan -H $SSH_HOST >> ~/.ssh/known_hosts
-          ssh $SSH_USER@$SSH_HOST "
-            cd $WORK_DIR &&
-            git pull origin main &&
-            echo 'Building the application...' &&
-            npm install &&
-            npm run build
-          "
+#      # Étape 3 : Mettre à jour le code sur le serveur distant
+#      - name: Git Pull and Build
+#        env:
+#          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+#          SSH_USER: ${{ secrets.SSH_USER }}
+#          SSH_HOST: ${{ secrets.SSH_HOST }}
+#          WORK_DIR: ${{ secrets.WORK_DIR }}
+#        run: |
+#          echo "Connecting to the server..."
+#          mkdir -p ~/.ssh
+#          echo "$SSH_PRIVATE_KEY" | base64 -d > ~/.ssh/id_rsa
+#          chmod 600 ~/.ssh/id_rsa
+#          ssh-keyscan -H $SSH_HOST >> ~/.ssh/known_hosts
+#          ssh $SSH_USER@$SSH_HOST "
+#            cd $WORK_DIR &&
+#            git pull origin main &&
+#            echo 'Building the application...' &&
+#            npm install &&
+#            npm run build
+#          "
